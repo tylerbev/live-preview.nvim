@@ -1,0 +1,149 @@
+:root {
+  --obsidian-color-red: #E93147;
+  --obsidian-color-orange: #EC7500;
+  --obsidian-color-yellow: #E0AC00;
+  --obsidian-color-green: #08B94E;
+  --obsidian-color-cyan: #00BFBC;
+  --obsidian-color-blue: #086DDD;
+  --obsidian-color-purple: #7852EE;
+  --obsidian-color-pink: #D53984;
+  --obsidian-color-gray: #9E9E9E;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --obsidian-color-red: #FB464C;
+    --obsidian-color-orange: #E9973F;
+    --obsidian-color-yellow: #E0DE71;
+    --obsidian-color-green: #44CF6E;
+    --obsidian-color-cyan: #53DFDD;
+    --obsidian-color-blue: #027AFF;
+    --obsidian-color-purple: #A882FF;
+    --obsidian-color-pink: #FA99CD;
+    --obsidian-color-gray: #9E9E9E;
+  }
+}
+
+.obsidian-callout {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.obsidian-callout>:first-child {
+  margin-top: 0
+}
+
+.obsidian-callout>:last-child {
+  margin-bottom: 0
+}
+
+.obsidian-callout .obsidian-callout-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.obsidian-callout .obsidian-callout-title .lucide {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+}
+
+.obsidian-callout.obsidian-callout-note,
+.obsidian-callout.obsidian-callout-info,
+.obsidian-callout.obsidian-callout-todo {
+  border-left-color: var(--obsidian-color-blue);
+}
+
+.obsidian-callout.obsidian-callout-note .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-info .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-todo .obsidian-callout-title {
+  color: var(--obsidian-color-blue);
+}
+
+.obsidian-callout.obsidian-callout-abstract,
+.obsidian-callout.obsidian-callout-summary,
+.obsidian-callout.obsidian-callout-tldr,
+.obsidian-callout.obsidian-callout-tip,
+.obsidian-callout.obsidian-callout-hint,
+.obsidian-callout.obsidian-callout-important {
+  border-left-color: var(--obsidian-color-cyan);
+}
+
+.obsidian-callout.obsidian-callout-abstract .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-summary .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-tldr .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-tip .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-hint .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-important .obsidian-callout-title {
+  color: var(--obsidian-color-cyan);
+}
+
+.obsidian-callout.obsidian-callout-success,
+.obsidian-callout.obsidian-callout-check,
+.obsidian-callout.obsidian-callout-done {
+  border-left-color: var(--obsidian-color-green);
+}
+
+.obsidian-callout.obsidian-callout-success .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-check .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-done .obsidian-callout-title {
+  color: var(--obsidian-color-green);
+}
+
+.obsidian-callout.obsidian-callout-question,
+.obsidian-callout.obsidian-callout-help,
+.obsidian-callout.obsidian-callout-faq,
+.obsidian-callout.obsidian-callout-warning,
+.obsidian-callout.obsidian-callout-caution,
+.obsidian-callout.obsidian-callout-attention {
+  border-left-color: var(--obsidian-color-orange);
+}
+
+.obsidian-callout.obsidian-callout-question .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-help .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-faq .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-warning .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-caution .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-attention .obsidian-callout-title {
+  color: var(--obsidian-color-orange);
+}
+
+.obsidian-callout.obsidian-callout-failure,
+.obsidian-callout.obsidian-callout-fail,
+.obsidian-callout.obsidian-callout-missing,
+.obsidian-callout.obsidian-callout-danger,
+.obsidian-callout.obsidian-callout-error,
+.obsidian-callout.obsidian-callout-bug {
+  border-left-color: var(--obsidian-color-red);
+}
+
+.obsidian-callout.obsidian-callout-failure .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-fail .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-missing .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-danger .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-error .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-bug .obsidian-callout-title {
+  color: var(--obsidian-color-red);
+}
+
+.obsidian-callout.obsidian-callout-example {
+  border-left-color: var(--obsidian-color-purple);
+}
+.obsidian-callout.obsidian-callout-example .obsidian-callout-title {
+  color: var(--obsidian-color-purple);
+}
+
+.obsidian-callout.obsidian-callout-quote,
+.obsidian-callout.obsidian-callout-cite {
+  border-left-color: var(--obsidian-color-gray);
+}
+.obsidian-callout.obsidian-callout-quote .obsidian-callout-title,
+.obsidian-callout.obsidian-callout-cite .obsidian-callout-title {
+  color: var(--obsidian-color-gray);
+}
+
